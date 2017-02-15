@@ -260,23 +260,28 @@
     </header>
 
     <div class="mdl-layout__drawer">
-        <header>darkboard</header>
+        <header class="mdl-layout__drawer-header--full">darkboard</header>
+        <header class="mdl-layout__drawer-header--mini">db</header>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="index.html">
-                <i class="material-icons" role="presentation">dashboard</i>
+                <i class="material-icons" role="presentation" title="Dashboard">dashboard</i>
                 Dashboard
             </a>
-            <a class="mdl-navigation__link" href="forms.html">
+            <a class="mdl-navigation__link" href="forms.html" title="Account">
                 <i class="material-icons" role="presentation">person</i>
                 Account
             </a>
-            <a class="mdl-navigation__link mdl-navigation__link--current" href="maps.html">
+            <a class="mdl-navigation__link mdl-navigation__link--current" href="maps.html" title="Map">
                 <i class="material-icons" role="presentation">map</i>
                 Maps
             </a>
-            <a class="mdl-navigation__link" href="ui.html">
+            <a class="mdl-navigation__link" href="ui.html" title="UI Elements">
                 <i class="material-icons">view_comfy</i>
                 UI Elements
+            </a>
+            <a class="mdl-navigation__link" href="charts.html" title="Charts">
+                <i class="material-icons">multiline_chart</i>
+                Charts
             </a>
 
             <div class="mdl-layout-spacer"></div>
@@ -319,6 +324,18 @@
 <!-- endinject -->
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW0td9v69m95iy5Q2YiMebpIO7ztCnuPU&language=en&callback=initMap" async defer></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-86545481-5', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
 </body>
 </html>
 
